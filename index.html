@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Milstone-6: Project SportsDB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary container-fluid">
+            <div class="d-flex navbar-brand bg-primary text-warning rounded-pill bg-dark">
+                <img class="img-fluid" src="images/nizam.png" width="60" height="24">
+                <h4>Milstone-6<br>Project SportsDB</h4>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold ">
+                <li class="nav-item"><a class="nav-link text-white hover:text-warning" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod18.html">Module-18</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod_19/mod19.html">Module-19</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod20.html">Module-20</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod21.html">Module-21</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod22.html">Module-22</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="mod23.html">Module-23</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Milstone
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Milstone-01</a></li>
+                      <li><a class="dropdown-item" href="#">Milstone-02</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="index.html">Milstone-03</a></li>
+                      <li><a class="dropdown-item" href="index.html">Milstone-04</a></li>
+                    </ul>
+                  </li>
+            </ul>
+            <button class="btn bg-warning text-dark me-5" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit">Modal</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Assalamualaikum!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 This page made by Bootstrap.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Change</button>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        </nav>
+        <div class="d-flex justify-content-around align-items-center bg-dark text-white">
+            <div>
+                <h1>Assalamualaikum!</h1>
+                <h1 class="display-1 fw-bold text-warning">I am Nizam</h1>
+                <h4>Student of Batch-7</h4>
+            </div>
+            <div>
+                <img class="rounded-circle" src="images/nizam.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+        <h1 class="mt-4 text-center fw-bolde">Welcome To AportsDB Official</h1>
+        </section>
+        <section class="container">
+            <div class="row mt-5">
+                <div class="col-12 col-md-12 col-lg-6">
+                  <div class="container-fluid">
+                    <div class="d-flex" role="search">
+                      <input
+                        id="search-value"
+                        class="form-control me-2 w-75 mx-auto"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                      <button
+                        onclick="searchPlayer()"
+                        class="btn btn-outline-success"
+                        type="submit"
+                      >
+                        Search
+                      </button>
+                    </div>
+                  </div>
+        
+                  <div id="spinner" class="mt-2 d-none d-flex justify-content-center">
+                    <div class="spinner-border" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                  </div>
+                  <div
+                    id="player-info"
+                    class="mt-4 row row-cols-1 row-cols-md-2 g-4"
+                  ></div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                  <div class="card mb-3 d-none" id="male">
+                    <img src="./img/male.jpeg" class="card-img-top" alt="..." />
+                  </div>
+                  <div class="card mb-3 d-none" id="female">
+                    <img src="./img/female.jpg" class="card-img-top" alt="..." />
+                  </div>
+                  <div id="player-details"></div>
+                </div>
+              </div>
+        
+        </section>
+    </main>
+    <script src="js/sports.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html> 
